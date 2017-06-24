@@ -19,12 +19,4 @@ for files in Allfiles:
 	for file in files:
 		im = Image.open(file.name).convert("RGB")
 		im.save(file.name[:-4]+".jpg","jpeg")
-	#os.remove(file.name)
-'''
-#Can also be done using
-import os
-for subdir, dirs, files in os.walk('./'):
-    for file in files:
-      #do some stuff
-      print file
-'''	
+	
