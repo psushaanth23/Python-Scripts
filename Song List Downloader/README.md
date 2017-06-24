@@ -1,4 +1,4 @@
-# Download any song
+# Song list downloader
 
 Required Libraries - 
 	Urllib
