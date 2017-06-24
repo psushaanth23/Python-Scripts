@@ -13,6 +13,6 @@ Afterall who wants to keep refreshing the web and wasting time when python can d
 	
 	- The program keeps refreshing the cricbuzz page every 10 secs.
 	- If it sees that match is resumed in the current match area of the page.
-		- Then alert the user.
+		Then alert the user.
 	- Else
-		- Repeat the steps again.
+		Repeat the steps again.
