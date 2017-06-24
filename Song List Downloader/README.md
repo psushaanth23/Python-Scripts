@@ -14,17 +14,12 @@
 
 ### Sample Input - 
 
-5
-
-Kygo It Ain't Me 
-
-Gryffin & Illenium ft. Daya - Feel Good
-
-Taylor Swift- We Are Never Ever Getting Back Together
-
-Alesso Years
-
-Adele- Rolling in the Deep
+	5
+	Kygo It Ain't Me 
+	Gryffin & Illenium ft. Daya - Feel Good
+	Taylor Swift- We Are Never Ever Getting Back Together
+	Alesso Years
+	Adele- Rolling in the Deep
 
 ### How it works
 	- Search youtube with the search_term = <SongName + 'lyrics'>
