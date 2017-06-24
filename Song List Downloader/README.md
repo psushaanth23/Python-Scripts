@@ -1,16 +1,18 @@
 # Song list downloader
 
-Required Libraries - 
+### Required Libraries - 
+	
 	Urllib
+	
 	Beautiful Soup
 
-# Usage :
+## Usage :
 	- Run the script
 	- Input the number of songs
 	- Enter the songs one by one
 	- Songs are downloaded to the same folder
 
-# Sample Input - 
+## Sample Input - 
 
 5
 
@@ -24,7 +26,7 @@ Alesso Years
 
 Adele- Rolling in the Deep
 
-# How it works
+## How it works
 	- Search youtube with the search_term = <SongName + 'lyrics'>
 	- Get the first video link
 	- Use this link in the youtubeinmp3 API to get the download link
