@@ -2,6 +2,11 @@
 Program to convert any images to jpg
 Author : Sushaanth P
 
+Usage :
+- Put this python file in a new folder
+- Copy all the images you want to convert to jpg in this folder
+- Run the script
+
 '''
 from PIL import Image
 import os
