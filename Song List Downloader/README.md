@@ -2,9 +2,9 @@
 
 ### Required Libraries - 
 	
-	Urllib
-	
-	Beautiful Soup
+	urllib	
+	beautifulsoup
+	winsound
 
 ### Usage :
 	- Run the script
