@@ -1,5 +1,5 @@
 '''
-Program to convert any images to jpg
+Program to convert any image to jpg
 Author : Sushaanth P
 
 Usage :
