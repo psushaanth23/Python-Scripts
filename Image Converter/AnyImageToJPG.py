@@ -23,5 +23,5 @@ print(Allfiles)
 for files in Allfiles:
 	for file in files:
 		im = Image.open(file.name).convert("RGB")
-		im.save(file.name[:-4]+".jpg","jpeg")
+		im.save(file.name[:-4]+".jpg","jpeg") 	#change this line to change it to some other format
 	
