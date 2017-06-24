@@ -1,4 +1,3 @@
-'''
 # Convert any image to jpg
 
 ### Usage :
@@ -8,5 +7,3 @@
 
 The script finds all the images in the folder and converts them to JPEG format
 Ans saves it with the same name. 
-
-'''
