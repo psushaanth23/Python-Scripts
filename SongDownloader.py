@@ -1,70 +1,34 @@
-'''input
-5
+'''
+Download any song
+Author : Sushaanth P
 
-Snow Patrol- Chasing Cars
-Beyonce- Irreplacable
-2007:
-Fergie- Big Girls Don't Cry
-Avril Lavigne- Girlfriend
-Rihanna - Umbrella
-Sean Kingston- Beautiful Girls
-Alicia Keys- No One
-Timbaland (ft. OneRepublic)-  Apologize
-Silverchair- Straight Lines
-2008:
-Flo Rida- Low
-Leona Lewis- Bleeding Love
-Jordin Sparks (ft.Chris Brown) - No Air
-Sara Bareilles- Love Song
-Katy Perry- I Kissed a Girl
-Rihanna- Distubria
-Pink- So What
-Jason Mraz- I'm Yours
-2009:
-The Black Eyed Peas- Boom Boom Pow
-Lady Gaga- Poker Face
-Lady Gaga (ft. Colby O'Donis) Just Dance
-Taylor Swift- Love Story
-Beyonce- Single Ladies
-The Black Eyed Peas- I Gotta Feeling
-Katy Perry- Hot n Cold
-2010:
-Kesha- Tik Tok
-Katy Perry (ft. Snoop Dog) - California Girls
-Usher (Will.i.Am)- OMG
-BoB. (ft. Hayley Williams) - Airplanes
-Eminem (ft. Rihanna) - Love The Way You Lie
-Lady Gaga- Bad Romance
-Jay-Z & Alicia Keys- Empire State of Mind
-Justin Bieber- Baby
-2011:
-Adele- Rolling in the Deep
-Katy Perry- Firework
-LMFAO (ft. Lauren Bennett, Goonrock)- Party Rock Anthem
-Katy Perry (ft. Kanye West) - ET
-Pitbull- Give Me Everything
-Bruno Mars- Grenade
-Nicki Minaj- Superbass
-2012:
-Gotye (ft. Kimbra)- Somebody That I Used To Know
-Carly Rae Jepson- Call Me Maybe
-fun. - We Are Young
-One Direction- What Makes You Beautiful
-Maroon 5 (ft. Wiz Khalifa)- Payphone
-Kelly Clarkson- Stronger
-Psy- Gangnam Style
-Rihanna (ft. Calvin Harris) - We Found Love
-2013:
-Baauer- Harlem Shake
+#Required Libraries - 
+	Urllib
+	Beautiful Soup
+
+#Usage :
+	- Run the script
+	- Input the number of songs
+	- Enter the songs one by one
+	- Songs are downloaded to the same folder
+
+#Sample Input - 
+
+5
+Kygo It Ain't Me 
+Gryffin & Illenium ft. Daya - Feel Good
 Taylor Swift- We Are Never Ever Getting Back Together
-Macklemore (ft. Ryan lewis)- Thrift shop
-Rihanna (ft. Mikky Ekko) Stay
-Pink Nate Reuss-  Just Give Me a Reason
-Taylor Swift- I Knew You Were Trouble
-Justin Timberlake- Mirrors
-Robin Thicke (ft. T.I, Pharrell)- Blurred Lines
+Alesso Years
+Adele- Rolling in the Deep
+
+#How it works
+	- Search youtube with the search_term = <SongName + 'lyrics'>
+	- Get the first video link
+	- Use this link in the youtubeinmp3 API to get the download link
+	- Save the file
 
 '''
+
 import urllib
 import urllib.request as urllib2
 from bs4 import BeautifulSoup
@@ -102,8 +66,7 @@ n = int(input())
 
 for i in range(n):
 	song = input()
-	if(song.find('200')==-1):
-		print('>>> Downloading Song : \t'+song)
-		download(song)
-		print('>>> '+(str(i+1))+' down '+str(n-i-1)+' to go\t\t'+song+' is Done\n')
+	print('>>> Downloading Song : \t'+song)
+	download(song)
+	print('>>> '+(str(i+1))+' down '+str(n-i-1)+' to go\t\t'+song+' is Done\n')
 			
