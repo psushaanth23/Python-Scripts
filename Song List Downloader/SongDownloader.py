@@ -13,10 +13,11 @@ Adele- Rolling in the Deep
 
 '''
 
+
 import urllib
 import urllib.request as urllib2
 from bs4 import BeautifulSoup
-
+import winsound
 
 def save(link, SaveAs):
 	urllib2.urlretrieve(link, SaveAs)
@@ -51,6 +52,12 @@ n = int(input())
 for i in range(n):
 	song = input()
 	print('>>> Downloading Song : \t'+song)
-	download(song)
-	print('>>> '+(str(i+1))+' down '+str(n-i-1)+' to go\t\t'+song+' is Done\n')
-			
+	try:
+		download(song)
+		print('>>> '+(str(i+1))+' down '+str(n-i-1)+' to go\t\t'+song+' is Done\n')
+	except:
+		print('Exception : I guess you need to check the internet connection')
+
+
+print('ALL SONGS ARE DOWNLOADED')
+winsound.Beep(2000,4000)
