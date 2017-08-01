@@ -29,5 +29,5 @@
 	
 ### ToDo
 	Automatically download top 10 songs of the week at the end of the week.
-	Do not download if its already present (Checked by hashing).
+	Do not download if its already present.
  
