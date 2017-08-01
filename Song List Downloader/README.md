@@ -26,3 +26,7 @@
 	- Get the first video link
 	- Use this link in the youtubeinmp3 API to get the download link
 	- Save the file
+	
+### ToDo
+	- Automatically download top 10 songs of the week at the end of the week, Do not download if its already present (Checked by hashing).
+ 
